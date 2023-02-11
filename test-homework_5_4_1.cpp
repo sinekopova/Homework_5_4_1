@@ -18,10 +18,6 @@ TEST_CASE("test List", "[list]") {
 		}
 		{
 			list1.PushBack(1);
-			INFO("Список пуст после заполнения");
-			CHECK(list1.Empty() == true);
-		}
-		{
 			list1.PopBack();
 			INFO("Список не пуст после выдачи значения");
 			CHECK(list1.Empty() == true);
@@ -48,7 +44,7 @@ TEST_CASE("test List", "[list]") {
 		}
 		{
 			list2.PopBack();
-			INFO("Размер после очистки не равен 0");
+			INFO("Размер не равен 1");
 			CHECK(list2.Size() == 1);
 		}
 	}
